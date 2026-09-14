@@ -1,0 +1,28 @@
+# voice-agent-starter-kit -- Python dependencies for the agent worker.
+# Pinned loosely (>=) so you get fixes; pin exact versions before you deploy.
+
+# LiveKit Agents runtime (v1.x owns the audio loop).
+livekit-agents>=1.0.0
+
+# Pipeline plugins.
+livekit-plugins-sarvam>=1.4.2  # Sarvam Saaras STT + Bulbul TTS (Indian languages).
+                               # The floor is not cosmetic. bulbul:v3 rejects the
+                               # `pitch` and `loudness` fields outright; builds before
+                               # 1.2.9 send them unconditionally and so 400 on every
+                               # call. 1.4.2 is the first build that also lists the
+                               # bulbul:v3 speakers, including the default `simran`;
+                               # before it, the speaker check does not know them.
+                               # Verified against 1.5.8 and 1.7.1.
+livekit-plugins-silero        # Silero VAD (end-of-utterance detection)
+livekit-plugins-openai        # OpenAI gpt-4.1-mini LLM
+
+# LiveKit server/SIP API client (dispatch rules, SIP transfer, room admin).
+livekit-api
+
+# OpenAI SDK (used by the openai plugin).
+openai>=1.30
+
+# Config, HTTP, and TLS certs.
+python-dotenv
+httpx
+certifi

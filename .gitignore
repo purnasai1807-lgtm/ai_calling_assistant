@@ -1,0 +1,33 @@
+# --- Python ---
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# --- Secrets & config ---
+.env
+*.env
+!.env.example
+
+# --- Runtime artifacts (never commit real call data) ---
+recordings/
+transcripts/
+*.log
+*.jsonl
+# ...but DO ship the tiny demo sample recordings so `--demo` has audio out of the box.
+!dashboard/recordings/
+!dashboard/recordings/*.wav
+
+# --- Generated dashboard output ---
+dashboard/output/
+dashboard/*.html
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
