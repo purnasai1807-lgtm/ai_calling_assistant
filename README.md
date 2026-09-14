@@ -1,4 +1,4 @@
-# ðŸ“ž voice-agent-starter-kit
+# AI voice-agent-starter-kit
 
 [![CI](https://github.com/purnasai1807-lgtm/ai_calling_assistant/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/purnasai1807-lgtm/ai_calling_assistant/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -20,12 +20,12 @@ about property listings, captures the caller's name / budget / preferred area,
 and **books a site visit** â€” handing off to a human agent when asked. Swap the
 persona and data and Purna Sai becomes a receptionist for *your* business.
 
-> ðŸ’¡ This is a sanitized, general-purpose starter kit distilled from a real
+>  This is a sanitized, general-purpose starter kit distilled from a real
 > production system. Everything here is fresh and safe to fork.
 
 ---
 
-## âœ¨ What you get
+##  What you get
 
 - **A working inbound voice agent** â€” dial a number, talk to Purna Sai, get answers.
 - **Real Indian-language support** â€” 8 kHz codemix STT + natural TTS via Sarvam,
@@ -44,7 +44,7 @@ persona and data and Purna Sai becomes a receptionist for *your* business.
 
 ---
 
-## ðŸ“¸ Screenshots
+## ¸ Screenshots
 
 ### The call dashboard
 Every call gets a card: cost, flags, an AI summary, per-provider cost split, the
@@ -73,7 +73,7 @@ Vobiz connects to LiveKit as a SIP trunk (inbound origination). Setup walkthroug
 
 ---
 
-## ðŸ—ï¸ Architecture
+##  Architecture
 
 ```
                          â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ LIVE AUDIO PATH â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
@@ -116,7 +116,7 @@ Supabase, extracts leads, alerts owner notification, and feeds the dashboard.
 
 ---
 
-## âš¡ Latency
+## Latency
 
 These are **real measured numbers** on an India VPS with a tuned cascade â€” quoted
 honestly, not idealized. Full reproduction recipe in
@@ -137,7 +137,7 @@ honestly, not idealized. Full reproduction recipe in
 
 ---
 
-## ðŸ§° Tools you'll need
+##  Tools you'll need
 
 Set each of these up in [`docs/01-procurement.md`](docs/01-procurement.md).
 Prices are illustrative in INR â€” **approx, verify current pricing (checked 2026-07)**.
@@ -157,7 +157,7 @@ mileage varies â€” verify each price at signup.
 
 ---
 
-## ðŸš€ Quickstart
+##  Quickstart
 
 Work through the docs in this order. Each one is a self-contained, copy-paste guide.
 
@@ -186,7 +186,7 @@ Work through the docs in this order. Each one is a self-contained, copy-paste gu
 
 ---
 
-## ðŸ—‚ï¸ Repo layout
+##Repo layout
 
 ```
 voice-agent-starter-kit/
@@ -228,7 +228,7 @@ voice-agent-starter-kit/
 
 ---
 
-## ðŸŽ¨ Customizing for your own use case
+##  Customizing for your own use case
 
 Purna Sai voice agent is just a demo. To point the same machinery at *your*
 business â€” a restaurant, a gym, a support desk â€” you only touch three places
@@ -246,7 +246,7 @@ Deploy the same way, dial your number, done.
 
 ---
 
-## ðŸ™ Credits
+## Credits
 
 Built on the excellent work of the
 LiveKit, Sarvam, and n8n communities.
